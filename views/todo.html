@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput" placeholder="Add a new task..." required>
+        <button id="addTaskButton" onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </div>
+    <div class="update-container" style="display: none;">
+        <h1>To-Do List</h1>
+        <input type="text" id="updatedTaskInput" placeholder="Update task..." required>
+        <button id="updateTaskButton" onclick="updateTask()">Update Task</button>
+    </div>
+    <script src="/js/todo.js"></script>
+</body>
+
+</html>
